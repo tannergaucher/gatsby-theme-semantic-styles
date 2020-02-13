@@ -5,7 +5,7 @@ import React from "react"
 const PageTwo = ({ location }) => (
   <Layout location={location}>
     <SEO title="Page Two" />
-    <article className="padding page">
+    <article className="page">
       <div className="image-grid">
         <Image />
         <Image />

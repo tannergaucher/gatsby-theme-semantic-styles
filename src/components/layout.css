@@ -142,7 +142,7 @@ h1 .site-title {
 h1,
 .text--xxl {
   font-size: var(--text-xxl);
-  margin: var(--space-xl) 0;
+  margin: var(--space-lg) 0;
 }
 
 h2,
