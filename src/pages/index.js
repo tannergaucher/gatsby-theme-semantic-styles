@@ -10,7 +10,7 @@ const IndexPage = ({ location }) => {
     <Layout location={location}>
       <article className="padding page container center">
         <SEO title="Home" />
-        <h2>{description}</h2>
+        <h1>{description}</h1>
         <p>
           Responsive typography and spacing, adjustable vertical rhythm,
           responsive light / dark color themes. Customize and style inline with

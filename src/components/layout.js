@@ -17,9 +17,7 @@ const Layout = ({ location, children }) => {
         </Link>
         <Navlinks location={location} />
       </header>
-
       <main className="main">{children}</main>
-
       <footer className="footer padding">
         <Link to="/" className="nav-link">
           <h4 className="site-title">{title}</h4>
