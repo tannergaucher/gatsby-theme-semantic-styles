@@ -13,7 +13,7 @@ const Layout = ({ location, children }) => {
     <>
       <header className="header padding">
         <Link to="/" className="nav-link">
-          <h1 className="site-title">{title}</h1>
+          <h4 className="site-title">{title}</h4>
         </Link>
         <Navlinks location={location} />
       </header>
@@ -22,7 +22,7 @@ const Layout = ({ location, children }) => {
 
       <footer className="footer padding">
         <Link to="/" className="nav-link">
-          <h4 className="site-title text--md">{title}</h4>
+          <h4 className="site-title">{title}</h4>
         </Link>
       </footer>
     </>
