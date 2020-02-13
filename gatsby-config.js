@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby  Semantic Styles`,
     description: `Make things for the web, fast.`,
-    author: `tannermichaelgaucher@gmail`,
+    author: `<tannermichaelgaucher@gmail>`,
     social: {
       github: `https://github.com/tannergaucher`,
       linkedIn: ``,
