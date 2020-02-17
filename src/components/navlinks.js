@@ -3,8 +3,8 @@ import React from "react"
 
 const Navlinks = ({ location }) => (
   <nav className="nav">
-    <Navlink text="Page One" to="/" location={location} />
-    <Navlink text="Page Two" to="/page-two" location={location} />
+    <Navlink text="Classes" to="/classes" location={location} title />
+    <Navlink text="Variables" to="/variables" location={location} />
   </nav>
 )
 

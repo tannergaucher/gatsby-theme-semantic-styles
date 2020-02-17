@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby  Semantic Styles`,
-    description: `Make things for the web, fast.`,
+    title: `Semantic Styles`,
+    description: `Some description here.`,
     author: `<tannermichaelgaucher@gmail>`,
     social: {
       github: `https://github.com/tannergaucher`,
@@ -19,6 +19,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-mdx`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
