@@ -2,16 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Code:400,700&display=swap");
 
 :root {
-  /* COLORS */
+  /* Colors */
   --text-color: black;
-  --bg-1: #fafafaee;
+  --bg-1: #fafafa;
   --bg-2: white;
   --grey: #666666;
-  --accent-1: black;
-  --accent-2: fuchsia;
+  --brand: black;
+  --accent-1: #01b0c2;
+  --accent-2: hotpink;
   --code-bg: #28272c;
-  /* COMPONENTS */
-  --shadow-color: rgba(163, 119, 119, 0.1);
+  /* Components */
+  --shadow-color: rgba(0, 0, 0, 0.1);
   --radius: 5px;
   --thickness: 0.2vw;
   --elevation-1: 0 4px 12px var(--shadow-color);
@@ -19,23 +20,23 @@
   --elevation-3: 0 12px 20px var(--shadow-color);
   --opacity: opacity(0.35);
   --transition: all 0.2s ease 0s;
-  /* LAYOUT  */
-  --container: 850px;
+  /* Layout */
+  --container: 833px;
   --max-width: 2000px;
-  /* VALUES */
+  /* Scale */
   --responsive-unit: 0.5vw;
   --baseline: calc(1.2rem + var(--responsive-unit));
-  /* TYPOGRAPHY */
+  /* Typography */
   --sans: "Inter", sans-serif;
   --serif: "";
   --mono: "Fira Code", monospace;
   --heading-line-height: 1.3;
   --paragraph-line-height: 1.7;
-  --heading-letter-spacing: 0rem;
-  --paragraph-letter-spacing: 0rem;
-  --caps-letter-spacing: 0.17rem;
+  --heading-letter-spacing: 0.02rem;
+  --paragraph-letter-spacing: 0.02rem;
+  --caps-letter-spacing: 0.15rem;
   --text-base-size: calc(1rem + var(--responsive-unit));
-  --text-scale-ratio: 1.17;
+  --text-scale-ratio: 1.22;
 
   /* VARIABLES BELOW THIS HAVE DERIVED / CALCULATED VALUES: ADJUSTING THEM CAN BREAK THE SYSTEM. TREAD LIGHTLY  */
 
@@ -67,34 +68,32 @@
   --space-sm: calc(var(--baseline) / 2);
   --space-md: var(--baseline);
   --space-lg: calc(var(--baseline) * 2);
-  --space-xl: calc(var(--baseline) * 4);
+  --space-xl: calc(var(--baseline) * 3);
   /* Derived Component Colors */
-
   --href-color: var(--accent-1);
   --href-hover-color: var(--accent-2);
   --btn-bg: var(--bg-1);
   --btn-color: var(--text-color);
   --btn-border: var(--href-color);
   --btn-hover-color: var(--text-color);
-  --primary-btn-bg: var(--text-color);
-  --primary-btn-color: var(--accent-2);
-  --primary-btn-hover-color: var(--accent-1);
-  --input-border: var(--text-color);
+  --primary-btn-bg: var(--brand);
+  --primary-btn-color: var(--href-color);
+  --primary-btn-hover-color: var(--brand);
+  --input-border: var(--brand);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* Customizable values */
-    --bg-1: rgb(22, 21, 24);
+    --bg-1: black;
     --bg-2: #1a1a1b;
-    --accent-1: hotpink;
-    --accent-2: #80cba2;
-    --grey: #fafafa;
-    --text-color: var(--grey);
-    --shadow-color: rgba(25, 17, 37, 0.883);
+    --accent-1: #d81e9f;
+    --accent-2: #02f0f0;
+    --grey: #888888;
+    --text-color: white;
+    --grey: lightgrey;
+    --shadow-color: rgba(0, 0, 0, 0.9);
     --href-color: var(--accent-1);
     --href-hover-color: var(--accent-2);
-    /*  */
     --btn-color: var(--href-color);
     --btn-hover-color: var(--href-hover-color);
     --primary-btn-bg: var(--bg-2);
@@ -140,7 +139,6 @@ h1 {
 h1 .site-title {
   font-size: var(--text-xxxl);
 }
-
 h1,
 .text--xxl {
   font-size: var(--text-xxl);
@@ -181,7 +179,6 @@ p {
   line-height: var(--paragraph-line-height);
   letter-spacing: var(--paragraph-letter-spacing);
   font-weight: 500;
-  font-size: var(--text-md);
 }
 
 small {
@@ -192,7 +189,6 @@ li {
   margin-bottom: var(--space-sm);
   line-height: var(--paragraph-line-height);
   font-weight: 500;
-  font-size: var(--text-md);
 }
 
 li:last-child {
@@ -219,7 +215,6 @@ textarea {
 pre {
   font-family: var(--mono);
   background: var(--code-bg);
-  box-shadow: var(--elevation-1);
 }
 
 blockquote {
@@ -250,15 +245,6 @@ h6 {
 code {
   font-family: var(--mono);
   color: var(--text-color);
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  font-family: var(--mono);
-  font-size: var(--text-sm);
-  margin-top: var(--space-md);
-  margin-bottom: var(--space-md);
-  border-radius: var(--radius);
 }
 
 hr {
@@ -318,7 +304,7 @@ hr {
   background: var(--primary-btn-bg);
   color: var(--primary-btn-color);
   border: var(--thickness) solid var(--primary-btn-bg);
-  box-shadow: var(--elevation-2);
+  box-shadow: var(--elevation-3);
 }
 
 .btn-primary:hover,
@@ -335,7 +321,7 @@ hr {
 
 .card {
   background: var(--bg-2);
-  box-shadow: var(--elevation-1);
+  box-shadow: var(--elevation-2);
   border-radius: var(--radius);
   display: flex;
   flex-direction: column;
@@ -349,13 +335,11 @@ hr {
 .card-title {
   margin: 0;
   padding: var(--space-sm);
-  font-weight: 900;
 }
 
 .card-text {
   margin: 0;
   padding: var(--space-sm);
-  color: var(--grey);
 }
 
 .fieldset {
@@ -365,7 +349,9 @@ hr {
 }
 
 .figcaption {
-  margin-top: var(--space-lg);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+  font-style: italic;
 }
 
 .figure {
@@ -409,18 +395,9 @@ hr {
 .nav {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  grid-area: navlinks;
 }
-
-.navlink {
-  margin-top: var(--space-md);
-  margin-right: var(--space-sm);
-  margin-bottom: var(--space-md);
-  margin-left: 0;
-  font-weight: 700;
-  font-size: var(--text-md);
-}
-
-/* TODO: REMOVE */
 
 .nav-link {
   text-decoration: none;
@@ -556,16 +533,25 @@ a,
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: var(--space-sm);
+  max-width: var(--max-width);
   margin-top: var(--space-lg);
   margin-bottom: var(--space-lg);
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1600px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 .page {
-  margin-top: var(--space-lg);
-  margin-top: var(--space-lg);
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-xl);
 }
 
-@media (max-width: 830px) {
+@media (max-width: 600px) {
   .only-mobile-padding {
     padding: 0 var(--space-sm);
   }
@@ -580,11 +566,10 @@ a,
 /* Typography */
 
 .site-title {
+  text-transform: uppercase;
+  letter-spacing: var(--caps-letter-spacing);
+  color: var(--accent-1);
   margin: 0;
   padding: var(--space-md) 0;
   padding-right: var(--space-md);
-}
-
-.title {
-  font-weight: 900;
 }
