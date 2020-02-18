@@ -8,7 +8,6 @@ import { useSiteMetadata } from "../hooks"
 
 const Layout = ({ location, children }) => {
   const { title } = useSiteMetadata()
-
   return (
     <>
       <header className="header padding">
