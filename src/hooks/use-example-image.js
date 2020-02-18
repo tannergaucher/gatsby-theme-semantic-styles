@@ -7,7 +7,7 @@ export const useExampleImage = () => {
         file(relativePath: { regex: "/sign/" }) {
           childImageSharp {
             fluid(maxWidth: 800) {
-              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluid_withWebp
             }
           }
         }
