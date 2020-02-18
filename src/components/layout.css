@@ -348,10 +348,9 @@ hr {
   box-shadow: var(--elevation-3);
 }
 
-.card-title {
+.card-heading {
   margin: 0;
   padding: var(--space-sm);
-  font-weight: 900;
 }
 
 .card-text {
