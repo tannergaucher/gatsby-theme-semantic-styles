@@ -187,6 +187,12 @@ small {
   font-weight: 300;
 }
 
+ul {
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-md);
+  padding-left: var(--space-md);
+}
+
 li {
   margin-bottom: var(--space-sm);
   line-height: var(--paragraph-line-height);
