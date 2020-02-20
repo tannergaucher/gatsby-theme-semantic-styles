@@ -76,7 +76,7 @@
   --btn-color: var(--text-color);
   --btn-border: var(--href-color);
   --btn-hover-color: var(--text-color);
-  --primary-btn-bg: var(--text-color);
+  --primary-btn-bg: var(--accent-1);
   --primary-btn-color: var(--accent-2);
   --primary-btn-hover-color: var(--accent-1);
   --input-border: var(--text-color);
