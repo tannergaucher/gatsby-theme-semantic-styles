@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Semantic Styles`,
-    description: `Rapid, Responsive Prototyping for the Web.`,
+    description: `Compose for the Web Responsively.`,
     author: `<tannermichaelgaucher@gmail>`,
     social: {
       github: `https://github.com/tannergaucher`,
