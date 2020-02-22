@@ -1,4 +1,4 @@
-import "./layout.css"
+import "./index.css"
 
 import { Link } from "gatsby"
 import { Navlinks } from "."
